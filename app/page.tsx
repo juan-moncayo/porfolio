@@ -114,7 +114,7 @@ export default function SobreMi() {
                         }}
                       >
                         <p className="p-4">
-                          Información sobre mis habilidades y experiencias en programación.
+                        Soy estudiante de Ingeniería de Software con experiencia en desarrollo backend utilizando frameworks como Django y Spring Boot, y lenguajes como Python y Java. También trabajo en frontend con React y gestiono bases de datos como PostgreSQL y MySQL. He desarrollado proyectos de automatización y control con ESP32 y Arduino. Disfruto aprender nuevas tecnologías y aplicar mi creatividad en proyectos innovadores.
                         </p>
                       </AccordionItem>
                       <AccordionItem 
@@ -129,7 +129,7 @@ export default function SobreMi() {
                         }}
                       >
                         <p className="p-4">
-                          Detalles sobre mi pasión por los videojuegos y cómo influyen en mi trabajo.
+                        Mi pasión por los videojuegos, especialmente Valorant, Minecraft, Fortnite y League of Legends (LoL), ha sido una gran fuente de inspiración para mi trabajo en programación. Estos juegos no solo alimentan mi creatividad, sino que también influyen en el diseño de mis proyectos y en la forma en que abordo los desafíos técnicos. El interés por juegos estratégicos y competitivos como Valorant y LoL me ha enseñado a resolver problemas de manera eficiente y a pensar en soluciones rápidas, mientras que Minecraft y Fortnite refuerzan mi pasión por crear entornos y sistemas interactivos, lo que se refleja en mis proyectos de software y automatización.
                         </p>
                       </AccordionItem>
                       <AccordionItem 
@@ -144,7 +144,7 @@ export default function SobreMi() {
                         }}
                       >
                         <p className="p-4">
-                          Mi experiencia en voleibol y cómo aplico las lecciones aprendidas en mi desarrollo profesional.
+                        El voleibol es uno de mis hobbies, y me ha enseñado valiosas lecciones que aplico en mi desarrollo profesional. La importancia del trabajo en equipo, la comunicación efectiva y la disciplina que exige el deporte me han ayudado a ser más organizado y a abordar desafíos de manera colaborativa en mis proyectos de programación. Además, me ha enseñado a mantener la perseverancia y a adaptarme rápidamente a nuevas situaciones, habilidades que considero esenciales en mi carrera.
                         </p>
                       </AccordionItem>
                     </Accordion>

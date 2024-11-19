@@ -51,6 +51,12 @@ export default function Experiencia() {
       institution: "Talento Tech",
       period: "2024 - 2024",
       description: "Bootcamp intensivo de 150 horas en tecnologías de analisis de datos."
+    },
+    {
+      title: "Desarrorlo FullStack",
+      institution: "Universidad Cooperativa de colombia",
+      period: "2024 - 2024",
+      description: "Desarrollo de una aplicación web tipo LinkedIn para crear publicaciones y gestionar conexiones entre personas."
     }
   ]
 

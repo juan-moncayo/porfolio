@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { Card, CardBody, CardHeader, CardFooter, Image, Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, Link, Button, Modal, ModalContent, ModalHeader, ModalBody, ModalFooter } from '@nextui-org/react'
+import { Card, CardBody, CardHeader, Image, Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, Link, Button, Modal, ModalContent, ModalHeader, ModalBody, ModalFooter } from '@nextui-org/react'
 import { Moon, Sun } from 'lucide-react'
 import { useTheme } from "next-themes"
 
@@ -32,26 +32,27 @@ export default function MisProyectos() {
     {
       id: 1,
       title: "Luxury Now",
-      image: "/placeholder.svg?height=400&width=600",
-      description: "Plataforma interactiva que te facilita la agenda de servicios en cancun",
+      image: "/luxury.png?height=400&width=600",
+      description: "Plataforma interactiva que te facilita la agenda de servicios en cancun (En desarrollo)",
       demoUrl: "https://luxury-now-blog-83b3.vercel.app",
-      modalContent: "Contenido detallado del proyecto Paycon"
+      modalContent: "Plataforma interactiva que facilita la gestión de agendas de servicios en Cancún, permitiendo a los usuarios reservar y gestionar citas de manera eficiente. Con un diseño intuitivo y herramientas de fácil acceso, esta plataforma busca mejorar la experiencia de los clientes y optimizar la gestión para los proveedores de servicios en la región."
     },
     {
       id: 2,
       title: "Tienda De Perifericos",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/perifericos.png?height=400&width=600",
       description: "Una tienda interactiva que permite a los usuarios explorar diferentes periféricos en tiempo real y agregar productos al carrito de compras.",
       demoUrl: "https://tienda-de-perifericos.vercel.app",
-      modalContent: "Contenido detallado de la Tienda de Periféricos"
+      modalContent: "Una tienda interactiva que permite a los usuarios explorar diferentes periféricos en tiempo real, visualizando características, precios y disponibilidad de los productos. Los usuarios pueden agregar productos al carrito de compras de manera sencilla y rápida, proporcionando una experiencia de compra fluida y dinámica."
+
     },
     {
       id: 3,
       title: "ProNet",
-      image: "/placeholder.svg?height=400&width=600",
-      description: "Una plataforma interactiva que permite a los usuarios conectarse y colaborar en un entorno profesional.",
+      image: "/pronet.png?height=400&width=600",
+      description: "Una plataforma interactiva que permite a los usuarios conectarse entre si crear publicaciones y colaborar en un entorno profesional.",
       demoUrl: "#",
-      modalContent: "Contenido detallado del proyecto ProNet"
+      modalContent: "Una plataforma interactiva que permite a los usuarios conectarse entre sí, crear publicaciones y colaborar en un entorno profesional. ProNet está diseñada para facilitar la interacción y el intercambio de ideas entre profesionales, ofreciendo herramientas para la gestión de contenido y la creación de redes de contacto dentro de un espacio digital organizado y accesible."
     }
   ]
 
