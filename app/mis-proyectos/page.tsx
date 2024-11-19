@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { Card, CardBody, CardHeader, CardFooter, Image, Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, Link, Button, Modal, ModalContent, ModalHeader, ModalBody, ModalFooter } from '@nextui-org/react'
-import { Moon, Sun } from "lucide-react"
+import { Moon, Sun } from 'lucide-react'
 import { useTheme } from "next-themes"
 
 interface Project {

@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react'
 import { Card, CardBody, CardHeader, Image, Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, Link, Accordion, AccordionItem, Button } from '@nextui-org/react'
-import { Moon, Sun } from "lucide-react"
+import { Moon, Sun } from 'lucide-react'
 import { useTheme } from "next-themes"
 
 export default function SobreMi() {

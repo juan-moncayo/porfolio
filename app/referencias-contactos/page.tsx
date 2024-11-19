@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { Card, CardBody, Image, Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, Link, Button, Input } from "@nextui-org/react"
-import { Moon, Sun } from "lucide-react"
+import { Moon, Sun } from 'lucide-react'
 import { useTheme } from "next-themes"
 
 export default function ReferenciasContacto() {
