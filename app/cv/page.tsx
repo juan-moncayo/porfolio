@@ -34,12 +34,18 @@ export default function CVPage() {
       setLanguage(savedLanguage)
     }
 
+    // Get the CV file name based on language
+    const cvFileName = language === "en" ? "cv-juan-moncayo-en.pdf" : "cv-juan-moncayo.pdf"
+
     // Redirigir automáticamente a la descarga del PDF
     const downloadLink = document.createElement("a")
-    downloadLink.href = "/cv-juan-moncayo.pdf"
-    downloadLink.download = "cv-juan-moncayo.pdf"
+    downloadLink.href = `/${cvFileName}`
+    downloadLink.download = cvFileName
     downloadLink.click()
-  }, [])
+  }, [language])
+
+  // Get the CV file name based on language for the manual download button
+  const cvFileName = language === "en" ? "cv-juan-moncayo-en.pdf" : "cv-juan-moncayo.pdf"
 
   return (
     <div className="max-w-4xl mx-auto p-8">
@@ -49,7 +55,7 @@ export default function CVPage() {
         <div className="flex gap-4">
           <Button
             as="a"
-            href="/cv-juan-moncayo.pdf"
+            href={`/${cvFileName}`}
             download
             color="primary"
             className="bg-[#ff4655]"
