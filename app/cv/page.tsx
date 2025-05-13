@@ -33,15 +33,21 @@ export default function CVPage() {
     if (savedLanguage && (savedLanguage === "en" || savedLanguage === "es")) {
       setLanguage(savedLanguage)
     }
+  }, [])
 
-    // Get the CV file name based on language
-    const cvFileName = language === "en" ? "cv-juan-moncayo-en.pdf" : "cv-juan-moncayo.pdf"
+  // Add a separate useEffect that runs when language changes and triggers the download
+  useEffect(() => {
+    // Only trigger download after language is properly set
+    if (language) {
+      // Get the CV file name based on language
+      const cvFileName = language === "en" ? "cv-juan-moncayo-en.pdf" : "cv-juan-moncayo.pdf"
 
-    // Redirigir automáticamente a la descarga del PDF
-    const downloadLink = document.createElement("a")
-    downloadLink.href = `/${cvFileName}`
-    downloadLink.download = cvFileName
-    downloadLink.click()
+      // Create and trigger download
+      const downloadLink = document.createElement("a")
+      downloadLink.href = `/${cvFileName}`
+      downloadLink.download = cvFileName
+      downloadLink.click()
+    }
   }, [language])
 
   // Get the CV file name based on language for the manual download button
