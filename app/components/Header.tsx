@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState } from "react"
 import {
   Navbar,
   NavbarContent,
@@ -16,59 +16,27 @@ import {
 import { Moon, Sun, Globe } from "lucide-react"
 import { useTheme } from "next-themes"
 import { usePathname } from "next/navigation"
-
-// Define the translations for menu items
-const menuTranslations = {
-  en: [
-    { name: "ABOUT ME", href: "/" },
-    { name: "MY ENTERPRISE", href: "/mi-emprendimiento" },
-    { name: "MY PROJECTS", href: "/mis-proyectos" },
-    { name: "EXPERIENCE", href: "/experiencia" },
-    { name: "REFERENCES & CONTACTS", href: "/referencias-contactos" },
-  ],
-  es: [
-    { name: "SOBRE MI", href: "/" },
-    { name: "MI EMPRENDIMIENTO", href: "/mi-emprendimiento" },
-    { name: "MIS PROYECTOS", href: "/mis-proyectos" },
-    { name: "EXPERIENCIA", href: "/experiencia" },
-    { name: "REFERENCIAS Y CONTACTOS", href: "/referencias-contactos" },
-  ],
-}
+import { useLanguage } from "@/app/hooks/useLanguage"
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const { theme, setTheme } = useTheme()
-  const [language, setLanguage] = useState("es") // Default language is Spanish
-  const [isMounted, setIsMounted] = useState(false)
+  const { language, toggleLanguage, t, isMounted } = useLanguage()
   const pathname = usePathname()
-
-  // Initialize language from localStorage on component mount
-  useEffect(() => {
-    setIsMounted(true)
-    const savedLanguage = localStorage.getItem("preferredLanguage")
-    if (savedLanguage) {
-      setLanguage(savedLanguage)
-    }
-  }, [])
-
-  // Function to toggle language
-  const toggleLanguage = () => {
-    const newLanguage = language === "en" ? "es" : "en"
-    setLanguage(newLanguage)
-    localStorage.setItem("preferredLanguage", newLanguage)
-
-    // Dispatch a custom event that pages can listen for
-    const event = new CustomEvent("languageChange", { detail: { language: newLanguage } })
-    window.dispatchEvent(event)
-  }
-
-  // Get menu items based on current language
-  const menuItems = menuTranslations[language as keyof typeof menuTranslations] || menuTranslations.en
 
   // Don't render anything until mounted to prevent hydration issues
   if (!isMounted) {
     return null
   }
+
+  // Define menu items based on translations
+  const menuItems = [
+    { name: t.menu.aboutMe, href: "/" },
+    { name: t.menu.myEnterprise, href: "/mi-emprendimiento" },
+    { name: t.menu.myProjects, href: "/mis-proyectos" },
+    { name: t.menu.experience, href: "/experiencia" },
+    { name: t.menu.referencesContacts, href: "/referencias-contactos" },
+  ]
 
   return (
     <Navbar className="bg-[#271d28] dark:bg-[#271d28]" maxWidth="full" onMenuOpenChange={setIsMenuOpen}>
