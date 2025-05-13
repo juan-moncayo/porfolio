@@ -63,7 +63,7 @@ export default function Header() {
   }
 
   // Get menu items based on current language
-  const menuItems = menuTranslations[language] || menuTranslations.en
+  const menuItems = menuTranslations[language as keyof typeof menuTranslations] || menuTranslations.en
 
   // Don't render anything until mounted to prevent hydration issues
   if (!isMounted) {
