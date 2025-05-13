@@ -4,9 +4,6 @@ import { Providers } from "./providers"
 import localFont from "next/font/local"
 import "./globals.css"
 
-// Import NextUI styles directly
-import "@nextui-org/react/styles.css"
-
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -48,13 +45,13 @@ export default function RootLayout({
             background-color: rgb(15, 25, 35);
             color: rgb(187, 181, 178);
           }
-          .text-\[\#ff4655\] {
+          .text-\\[\\#ff4655\\] {
             color: #ff4655 !important;
           }
-          .bg-\[\#ff4655\] {
+          .bg-\\[\\#ff4655\\] {
             background-color: #ff4655 !important;
           }
-          .bg-\[\#271d28\] {
+          .bg-\\[\\#271d28\\] {
             background-color: #271d28 !important;
           }
         `,
