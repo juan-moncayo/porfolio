@@ -4,6 +4,9 @@ import { Providers } from "./providers"
 import localFont from "next/font/local"
 import "./globals.css"
 
+// Import NextUI styles directly
+import "@nextui-org/react/styles.css"
+
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -32,6 +35,31 @@ export default function RootLayout({
     <html lang="es" suppressHydrationWarning>
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        {/* Add inline styles to ensure basic styling works */}
+        <style
+          dangerouslySetInnerHTML={{
+            __html: `
+          body {
+            background-color: rgb(15, 25, 35);
+            color: rgb(187, 181, 178);
+            font-family: var(--font-geist-sans), Arial, sans-serif;
+          }
+          .dark {
+            background-color: rgb(15, 25, 35);
+            color: rgb(187, 181, 178);
+          }
+          .text-\[\#ff4655\] {
+            color: #ff4655 !important;
+          }
+          .bg-\[\#ff4655\] {
+            background-color: #ff4655 !important;
+          }
+          .bg-\[\#271d28\] {
+            background-color: #271d28 !important;
+          }
+        `,
+          }}
+        />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen`}>
         <Providers>{children}</Providers>
