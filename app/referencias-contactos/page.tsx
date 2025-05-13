@@ -6,8 +6,9 @@ import { useState, useEffect } from "react"
 import { Card, CardBody, Link, Button, Input, Textarea, Tooltip, Divider } from "@nextui-org/react"
 import { Mail, Linkedin, Phone, MapPin, Send, Quote, Github, CheckCircle } from "lucide-react"
 import { motion } from "framer-motion"
-import Header from "@/app/components/Header"
-import Footer from "@/app/components/Footer"
+// Cambiamos las importaciones para usar rutas relativas en lugar de alias
+import Header from "../components/Header"
+import Footer from "../components/Footer"
 
 // Translations object
 const translations = {

@@ -5,8 +5,9 @@ import { Card, CardBody, CardHeader, CardFooter, Image, Link, Button } from "@ne
 import { ExternalLink, ArrowRight } from "lucide-react"
 import { useTheme } from "next-themes"
 import { motion } from "framer-motion"
-import Header from "@/app/components/Header"
-import Footer from "@/app/components/Footer"
+// Cambiamos las importaciones para usar rutas relativas en lugar de alias
+import Header from "../components/Header"
+import Footer from "../components/Footer"
 
 // Translations object
 const translations = {
