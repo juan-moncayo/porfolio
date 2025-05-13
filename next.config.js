@@ -1,24 +1,16 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  swcMinify: false,
-  transpilePackages: ["@nextui-org/react", "framer-motion"],
-  reactStrictMode: true,
-  eslint: {
-    ignoreDuringBuilds: true,
+  output: "export",
+  images: {
+    unoptimized: true,
   },
   typescript: {
     ignoreBuildErrors: true,
   },
-  images: {
-    domains: ["localhost"],
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "**",
-      },
-    ],
-    unoptimized: true,
+  eslint: {
+    ignoreDuringBuilds: true,
   },
+  swcMinify: false,
 }
 
 module.exports = nextConfig
