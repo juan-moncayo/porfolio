@@ -114,6 +114,9 @@ export default function SobreMi() {
     },
   ]
 
+  // Get the CV file name based on language
+  const cvFileName = language === "en" ? "cv-juan-moncayo-en.pdf" : "cv-juan-moncayo.pdf"
+
   if (!isMounted) {
     return null
   }
@@ -164,8 +167,8 @@ export default function SobreMi() {
                   </Button>
                   <Button
                     as="a"
-                    href="/cv-juan-moncayo.pdf"
-                    download
+                    href={`/${cvFileName}`}
+                    download={cvFileName}
                     variant="light"
                     className="text-white"
                     endContent={<Download size={16} />}
