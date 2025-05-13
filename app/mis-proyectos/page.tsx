@@ -146,7 +146,7 @@ export default function MisProyectos() {
   }, [])
 
   // Get translations based on current language
-  const t = translations[language]
+  const t = translations[language as keyof typeof translations]
 
   const projects: Project[] = [
     {
