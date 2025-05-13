@@ -16,9 +16,8 @@ import {
 } from "@nextui-org/react"
 import { ExternalLink } from "lucide-react"
 import { motion } from "framer-motion"
-// Cambiamos las importaciones para usar rutas relativas en lugar de alias
-import Header from "../components/Header"
-import Footer from "../components/Footer"
+import Header from "@/app/components/Header"
+import Footer from "@/app/components/Footer"
 
 // Translations object
 const translations = {
