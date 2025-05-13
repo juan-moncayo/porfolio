@@ -81,7 +81,7 @@ export default function Experiencia() {
   }, [])
 
   // Get translations based on current language
-  const t = translations[language]
+  const t = translations[language as keyof typeof translations]
 
   const workExperience = [
     {
