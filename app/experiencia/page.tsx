@@ -14,6 +14,9 @@ import {
   Layout,
   CheckCircle,
   Award,
+  ShoppingCart,
+  Plane,
+  Store,
 } from "lucide-react"
 import { motion } from "framer-motion"
 import Header from "@/app/components/Header"
@@ -61,13 +64,11 @@ export default function Experiencia() {
 
   useEffect(() => {
     setIsMounted(true)
-
     // Check if there's a saved language preference in localStorage
     const savedLanguage = localStorage.getItem("preferredLanguage")
     if (savedLanguage) {
       setLanguage(savedLanguage)
     }
-
     // Listen for language changes from the Header component
     const handleLanguageChange = (event: CustomEvent) => {
       setLanguage(event.detail.language)
@@ -85,74 +86,103 @@ export default function Experiencia() {
 
   const workExperience = [
     {
-      title: language === "en" ? "Founder and Developer" : "Fundador y Desarrollador",
-      company: "PAYCON",
-      period: language === "en" ? "January 2023 - Present" : "Enero 2023 - Presente",
-      location: language === "en" ? "Pasto, Colombia" : "Pasto, Colombia",
+      title: language === "en" ? "Junior Software Engineer" : "Ingeniero de Software Junior",
+      company: "SoloCarnes",
+      period: language === "en" ? "January 2025 - May 2025" : "Enero 2025 - Mayo 2025",
+      location: language === "en" ? "Remote" : "Remoto",
       description:
         language === "en"
-          ? "At PAYCON, we combine tradition in mushroom cultivation with advanced technology to transform the agro-industrial sector. I developed the e-commerce platform using Next.js, React, and Tailwind CSS, implementing a scalable architecture with PostgreSQL as the database. The platform allows users to explore products, add them to the cart, and make purchases securely."
-          : "En PAYCON, unimos la tradición en el cultivo de hongos con tecnología avanzada para transformar el sector agroindustrial. Desarrollé la plataforma de comercio electrónico utilizando Next.js, React y Tailwind CSS, implementando una arquitectura escalable con PostgreSQL como base de datos. La plataforma permite a los usuarios explorar productos, añadirlos al carrito y realizar compras de manera segura.",
+          ? "Developed an online store for a local butcher shop, featuring category-based catalog, price per kilo system, shopping cart, Wompi payment gateway integration, and administrative panel. Implemented role-based authentication (admin, user, and delivery) with deployment on Railway and Vercel."
+          : "Desarrollé una tienda online para una carnicería local, con catálogo por categoría, precios por kilo, carrito de compras, pasarela de pagos Wompi y panel administrativo. Implementé autenticación por roles (admin, usuario y repartidor) y despliegue en Railway y Vercel.",
       responsibilities:
         language === "en"
           ? [
-              "Leadership of the business project from conception to implementation",
-              "Development of the e-commerce platform using Next.js",
-              "Implementation of the database architecture with PostgreSQL",
-              "Design of the user experience and interface of the online store",
-              "Management of the product catalog and inventory system",
+              "Development of complete e-commerce platform for butcher shop",
+              "Implementation of category-based product catalog system",
+              "Integration of shopping cart with price per kilo calculation",
+              "Wompi payment gateway integration for secure transactions",
+              "Role-based authentication system (admin, user, delivery)",
+              "Administrative panel development for inventory management",
+              "Deployment and maintenance on Railway and Vercel platforms",
             ]
           : [
-              "Liderazgo del proyecto empresarial desde su concepción hasta su implementación",
-              "Desarrollo de la plataforma de comercio electrónico utilizando Next.js",
-              "Implementación de la arquitectura de base de datos con PostgreSQL",
-              "Diseño de la experiencia de usuario y la interfaz de la tienda online",
-              "Gestión del catálogo de productos y sistema de inventario",
+              "Desarrollo de plataforma de comercio electrónico completa para carnicería",
+              "Implementación de sistema de catálogo de productos por categorías",
+              "Integración de carrito de compras con cálculo de precios por kilo",
+              "Integración de pasarela de pagos Wompi para transacciones seguras",
+              "Sistema de autenticación por roles (admin, usuario, repartidor)",
+              "Desarrollo de panel administrativo para gestión de inventario",
+              "Despliegue y mantenimiento en plataformas Railway y Vercel",
             ],
-      technologies: ["Next.js", "React", "Tailwind CSS", "PostgreSQL", "Vercel"],
-      icon: <Database className="h-5 w-5" />,
+      technologies: ["React", "Tailwind", "Django REST", "PostgreSQL", "Wompi", "Git", "Railway", "Vercel"],
+      icon: <ShoppingCart className="h-5 w-5" />,
       color: "bg-blue-500",
     },
     {
-      title: language === "en" ? "Full Stack Developer" : "Desarrollador Full Stack",
-      company: "LuxuryNow",
-      period: language === "en" ? "January 2024 - April 2024" : "Enero 2024 - Abril 2024",
-      location: language === "en" ? "Personal Project" : "Proyecto Personal",
+      title: language === "en" ? "Junior Software Engineer" : "Ingeniero de Software Junior",
+      company: "Luxury Now Cancún",
+      period: language === "en" ? "May 2024 - January 2025" : "Mayo 2024 - Enero 2025",
+      location: language === "en" ? "Remote" : "Remoto",
       description:
         language === "en"
-          ? "Design and development of an interactive platform that facilitates service scheduling in Cancun, allowing users to book and manage appointments efficiently. With an intuitive design and easy-to-access tools, this platform seeks to improve the customer experience and optimize management for service providers in the region."
-          : "Diseño y desarrollo de una plataforma interactiva que facilita la agenda de servicios en Cancún, permitiendo a los usuarios reservar y gestionar citas de manera eficiente. Con un diseño intuitivo y herramientas de fácil acceso, esta plataforma busca mejorar la experiencia de los clientes y optimizar la gestión para los proveedores de servicios en la región.",
+          ? "Participated in the development of a tourist booking platform in Cancun. Integrated Stripe as payment gateway, developed functions for service management and administrative panel."
+          : "Participé en el desarrollo de una plataforma de reservas turísticas en Cancún. Integré Stripe como pasarela de pagos, desarrollé funciones para gestión de servicios y panel administrativo.",
       responsibilities:
         language === "en"
           ? [
-              "Design and development of the platform using Next.js for frontend and backend",
-              "Implementation of Stripe integration for payment processing",
-              "Configuration of Strapi as a headless CMS for content management",
-              "Development of the database with PostgreSQL",
-              "Creation of a scalable and high-performance architecture",
-              "Deployment on Vercel for the frontend and Railway for the backend",
+              "Development of tourist booking platform for Cancun services",
+              "Stripe payment gateway integration for secure transactions",
+              "Service management system development",
+              "Administrative panel creation for booking management",
+              "User interface optimization for better customer experience",
+              "Database design and implementation for booking system",
+              "API development for frontend-backend communication",
             ]
           : [
-              "Diseño y desarrollo de la plataforma utilizando Next.js para el frontend y backend",
-              "Implementación de integración con Stripe para procesamiento de pagos",
-              "Configuración de Strapi como CMS headless para la gestión de contenido",
-              "Desarrollo de la base de datos con PostgreSQL",
-              "Creación de una arquitectura escalable y de alto rendimiento",
-              "Despliegue en Vercel para el frontend y Railway para el backend",
+              "Desarrollo de plataforma de reservas turísticas para servicios en Cancún",
+              "Integración de pasarela de pagos Stripe para transacciones seguras",
+              "Desarrollo de sistema de gestión de servicios",
+              "Creación de panel administrativo para gestión de reservas",
+              "Optimización de interfaz de usuario para mejor experiencia del cliente",
+              "Diseño e implementación de base de datos para sistema de reservas",
+              "Desarrollo de APIs para comunicación frontend-backend",
             ],
-      technologies: [
-        "Next.js",
-        "React",
-        "Tailwind CSS",
-        "Stripe",
-        "Strapi",
-        "PostgreSQL",
-        "Railway",
-        "Google reCAPTCHA",
-        "Vercel",
-      ],
-      icon: <Layout className="h-5 w-5" />,
+      technologies: ["React", "Tailwind", "Strapi", "Stripe", "Git", "Railway", "Vercel"],
+      icon: <Plane className="h-5 w-5" />,
       color: "bg-purple-500",
+    },
+    {
+      title: language === "en" ? "Junior FullStack Developer" : "Desarrollador FullStack Junior",
+      company: "Paycon",
+      period: language === "en" ? "October 2023 - May 2024" : "Octubre 2023 - Mayo 2024",
+      location: language === "en" ? "Hybrid" : "Híbrido",
+      description:
+        language === "en"
+          ? "Developed web solutions focused on local commerce and digital content. E-commerce: minimalist store for selling oyster mushrooms with WhatsApp orders without registration or payments. Technical blog: informative magazine-style platform about sustainability, technology and agricultural innovation."
+          : "Desarrollé soluciones web enfocadas en comercio local y contenido digital. Ecommerce: tienda minimalista para venta de setas orellanas con pedidos por WhatsApp sin registro ni pagos. Blog técnico: plataforma informativa estilo magazine sobre sostenibilidad, tecnología e innovación agrícola.",
+      responsibilities:
+        language === "en"
+          ? [
+              "Development of minimalist e-commerce for mushroom sales",
+              "WhatsApp integration for order management without registration",
+              "Technical blog platform development with magazine-style design",
+              "Content management system for sustainability and technology articles",
+              "Responsive web design implementation",
+              "SEO optimization for better search engine visibility",
+              "Performance optimization for fast loading times",
+            ]
+          : [
+              "Desarrollo de e-commerce minimalista para venta de setas",
+              "Integración con WhatsApp para gestión de pedidos sin registro",
+              "Desarrollo de plataforma de blog técnico con diseño estilo magazine",
+              "Sistema de gestión de contenido para artículos de sostenibilidad y tecnología",
+              "Implementación de diseño web responsivo",
+              "Optimización SEO para mejor visibilidad en motores de búsqueda",
+              "Optimización de rendimiento para tiempos de carga rápidos",
+            ],
+      technologies: ["React", "Tailwind CSS", "Next.js", "Git", "Vercel"],
+      icon: <Store className="h-5 w-5" />,
+      color: "bg-green-500",
     },
   ]
 

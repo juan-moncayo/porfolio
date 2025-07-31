@@ -78,7 +78,7 @@ export default function SobreMi() {
     },
     {
       title: language === "en" ? "Years of Experience" : "Años de Experiencia",
-      value: language === "en" ? "In development" : "En desarrollo",
+      value: language === "en" ? "1.5 Years" : "1.5 Años",
       icon: <Briefcase className="h-6 w-6 text-[#ff4655]" />,
     },
     {
