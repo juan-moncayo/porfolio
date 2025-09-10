@@ -73,7 +73,7 @@ export default function SobreMi() {
   const achievements = [
     {
       title: language === "en" ? "Completed Projects" : "Proyectos Completados",
-      value: "15+",
+      value: "6+",
       icon: <Layout className="h-6 w-6 text-[#ff4655]" />,
     },
     {
@@ -87,7 +87,7 @@ export default function SobreMi() {
       icon: <Award className="h-6 w-6 text-[#ff4655]" />,
     },
     {
-      title: language === "en" ? "Technologies Mastered" : "Tecnologías Dominadas",
+      title: language === "en" ? "Technologies" : "Tecnologías",
       value: "10+",
       icon: <Cpu className="h-6 w-6 text-[#ff4655]" />,
     },
@@ -144,8 +144,8 @@ export default function SobreMi() {
                 </h2>
                 <p className="text-gray-400 mb-8 text-lg">
                   {language === "en"
-                    ? "I am a developer passionate about creating innovative technological solutions. I combine my experience in web development with my creativity to build applications that make a difference."
-                    : "Soy un desarrollador apasionado por crear soluciones tecnológicas innovadoras. Combino mi experiencia en desarrollo web con mi creatividad para construir aplicaciones que marcan la diferencia."}
+                    ? "I am a Software Engineering student and Junior Fullstack Developer, passionate about creating innovative solutions that combine technology, usability, and scalability. I have strong skills in teamwork, applying best practices, and keeping an updated vision in the software world. I stand out for planning and efficiently executing strategies adapted to the real needs of each project, as well as for a constant commitment to continuous learning, innovation, and improving the user experience."
+                    : "Soy un estudiante de Ingeniería de Software y Desarrollador Fullstack Junior, apasionado por la creación de soluciones innovadoras que combinan tecnología, usabilidad y escalabilidad. Poseo habilidades destacadas para trabajar en equipo, aplicar buenas prácticas y mantener una visión actualizada en el mundo del software. Me caracterizo por la planificación y ejecución eficiente de estrategias, adaptadas a las necesidades reales de cada proyecto, y por un compromiso constante con el aprendizaje continuo, la innovación y la mejora de la experiencia del usuario."}
                 </p>
                 <div className="flex flex-wrap gap-4">
                   <Button
@@ -447,7 +447,7 @@ export default function SobreMi() {
               className="mb-16"
             >
               <h3 className="text-2xl font-bold text-[#ff4655] mb-6 text-center">
-                {language === "en" ? "Technologies I Master" : "Tecnologías que Domino"}
+                {language === "en" ? "Technologies" : "Tecnologías"}
               </h3>
               <Card className="bg-gray-200 dark:bg-[#1a2730] shadow-xl">
                 <CardBody className="p-6">

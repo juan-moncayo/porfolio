@@ -45,7 +45,7 @@ const translations = {
     pageSubtitle:
       "Mi trayectoria profesional y académica, destacando mis habilidades y conocimientos adquiridos a lo largo del tiempo.",
     // Experience sections
-    workExperience: "Experiencia Laboral",
+    workExperience: "Experiencia Freelance",
     academicExperience: "Experiencia Académica",
     // Work details
     responsibilities: "Responsabilidades",

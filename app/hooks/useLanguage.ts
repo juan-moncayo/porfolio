@@ -15,7 +15,7 @@ const translations = {
     hero: {
       title: "Junior Full Stack Developer",
       description:
-        "I am a developer passionate about creating innovative technological solutions. I combine my experience in web development with my creativity to build applications that make a difference.",
+        "I am a Software Engineering student and Junior Fullstack Developer, passionate about creating innovative solutions that combine technology, usability, and scalability. I have strong skills in teamwork, applying best practices, and keeping an updated vision in the software world. I stand out for planning and efficiently executing strategies adapted to the real needs of each project, as well as for a constant commitment to continuous learning, innovation, and improving the user experience.",
       contactMe: "Contact Me",
       viewProjects: "View Projects",
       downloadCV: "Download CV",
@@ -43,7 +43,7 @@ const translations = {
     hero: {
       title: "Desarrollador Junior Full Stack",
       description:
-        "Soy un desarrollador apasionado por crear soluciones tecnológicas innovadoras. Combino mi experiencia en desarrollo web con mi creatividad para construir aplicaciones que marcan la diferencia.",
+        "Soy un estudiante de Ingeniería de Software y Desarrollador Fullstack Junior, apasionado por la creación de soluciones innovadoras que combinan tecnología, usabilidad y escalabilidad. Poseo habilidades destacadas para trabajar en equipo, aplicar buenas prácticas y mantener una visión actualizada en el mundo del software. Me caracterizo por la planificación y ejecución eficiente de estrategias, adaptadas a las necesidades reales de cada proyecto, y por un compromiso constante con el aprendizaje continuo, la innovación y la mejora de la experiencia del usuario.",
       contactMe: "Contáctame",
       viewProjects: "Ver Proyectos",
       downloadCV: "Descargar CV",
@@ -61,6 +61,7 @@ const translations = {
     },
   },
 }
+
 
 export type Language = "en" | "es"
 
