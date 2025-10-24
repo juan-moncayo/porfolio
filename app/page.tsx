@@ -151,7 +151,7 @@ export default function SobreMi() {
                   <Button
                     as={Link}
                     href="/referencias-contactos"
-                    className="bg-[#ff4655] text-white font-medium"
+                    className="bg-[#ff4655] text-black font-medium"
                     endContent={<Mail size={16} />}
                   >
                     {language === "en" ? "Contact Me" : "Contáctame"}
@@ -160,7 +160,7 @@ export default function SobreMi() {
                     as={Link}
                     href="/mis-proyectos"
                     variant="bordered"
-                    className="border-[#c53030] text-[#c53030]"
+                    className="border-[#ff4655] text-[#ff4655]"
                     endContent={<ExternalLink size={16} />}
                   >
                     {language === "en" ? "View Projects" : "Ver Proyectos"}
