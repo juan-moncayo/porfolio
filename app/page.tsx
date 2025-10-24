@@ -137,7 +137,7 @@ export default function SobreMi() {
                 transition={{ duration: 0.5 }}
               >
                 <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-                  Juan David <span className="text-[#ff4655]">Moncayo</span>
+                  Juan Daviddddddddd <span className="text-[#ff4655]">Moncayo</span>
                 </h1>
                 <h2 className="text-xl md:text-2xl font-medium text-gray-300 mb-6">
                   {language === "en" ? "Junior Full Stack Developer" : "Desarrollador Junior Full Stack"}
