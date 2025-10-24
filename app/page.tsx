@@ -182,6 +182,7 @@ export default function SobreMi() {
                       href="https://github.com/juan-moncayo"
                       target="_blank"
                       rel="noopener noreferrer"
+                      aria-label="Github profile"
                       className="bg-white/10 p-3 rounded-full text-white hover:bg-[#ff4655] hover:text-white transition-colors"
                     >
                       <Github size={20} />
@@ -192,6 +193,7 @@ export default function SobreMi() {
                       href="https://www.linkedin.com/in/juan-moncayo-19a2a7306/"
                       target="_blank"
                       rel="noopener noreferrer"
+                      aria-label="Linkedin Profile"
                       className="bg-white/10 p-3 rounded-full text-white hover:bg-[#ff4655] hover:text-white transition-colors"
                     >
                       <Linkedin size={20} />
@@ -200,6 +202,7 @@ export default function SobreMi() {
                   <Tooltip content="Email">
                     <Link
                       href="mailto:Juan.moncayo627@gmail.com"
+                      aria-label="Send Email"
                       className="bg-white/10 p-3 rounded-full text-white hover:bg-[#ff4655] hover:text-white transition-colors"
                     >
                       <Mail size={20} />
