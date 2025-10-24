@@ -160,7 +160,7 @@ export default function SobreMi() {
                     as={Link}
                     href="/mis-proyectos"
                     variant="bordered"
-                    className="border-[#ff4655] text-[#ff4655]"
+                    className="border-[#c53030] text-[#c53030]"
                     endContent={<ExternalLink size={16} />}
                   >
                     {language === "en" ? "View Projects" : "Ver Proyectos"}
