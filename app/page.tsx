@@ -462,7 +462,7 @@ export default function SobreMi() {
                       >
                         <Image
                           src={tech.icon || "/placeholder.svg"}
-                          alt={tech.name}
+                          alt=""
                           width={50}
                           height={50}
                           className="mb-3 object-contain"
