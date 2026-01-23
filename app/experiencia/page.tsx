@@ -17,6 +17,7 @@ import {
   ShoppingCart,
   Plane,
   Store,
+  Home,
 } from "lucide-react"
 import { motion } from "framer-motion"
 import Header from "@/app/components/Header"
@@ -45,7 +46,7 @@ const translations = {
     pageSubtitle:
       "Mi trayectoria profesional y académica, destacando mis habilidades y conocimientos adquiridos a lo largo del tiempo.",
     // Experience sections
-    workExperience: "Experiencia Freelance",
+    workExperience: "Experiencia Profesional",
     academicExperience: "Experiencia Académica",
     // Work details
     responsibilities: "Responsabilidades",
@@ -86,99 +87,122 @@ export default function Experiencia() {
 
   const workExperience = [
     {
-      title: language === "en" ? "Junior Software Engineer" : "Ingeniero de Software Junior",
-      company: "SoloCarnes",
-      period: language === "en" ? "January 2025 - May 2025" : "Enero 2025 - Mayo 2025",
-      location: language === "en" ? "Remote" : "Remoto",
+      title: language === "en" ? "Web Development" : "Desarrollo Web",
+      company: "Xroofing and Solar",
+      period: language === "en" ? "August 2025 - December 2025" : "Agosto 2025 - Diciembre 2025",
+      location: language === "en" ? "Remote (Texas, United States)" : "Remoto (Texas, Estados Unidos)",
       description:
         language === "en"
-          ? "Developed an online store for a local butcher shop, featuring category-based catalog, price per kilo system, shopping cart, Wompi payment gateway integration, and administrative panel. Implemented role-based authentication (admin, user, and delivery) with deployment on Railway and Vercel."
-          : "Desarrollé una tienda online para una carnicería local, con catálogo por categoría, precios por kilo, carrito de compras, pasarela de pagos Wompi y panel administrativo. Implementé autenticación por roles (admin, usuario y repartidor) y despliegue en Railway y Vercel.",
+          ? "Supported the development of a corporate blog with reusable components. Collaborated in content translation and application of development best practices. Implemented responsive design focused on mobile devices."
+          : "Apoyé el desarrollo de un blog corporativo con componentes reutilizables. Colaboré en la traducción de contenidos y aplicación de buenas prácticas de desarrollo. Implementé diseño responsive enfocado en dispositivos móviles.",
       responsibilities:
         language === "en"
           ? [
-              "Development of complete e-commerce platform for butcher shop",
-              "Implementation of category-based product catalog system",
-              "Integration of shopping cart with price per kilo calculation",
-              "Wompi payment gateway integration for secure transactions",
-              "Role-based authentication system (admin, user, delivery)",
-              "Administrative panel development for inventory management",
-              "Deployment and maintenance on Railway and Vercel platforms",
+              "Support in developing corporate blog with reusable components",
+              "Collaboration in content translation and localization",
+              "Application of development best practices",
+              "Implementation of mobile-first responsive design",
+              "Component optimization for better performance",
             ]
           : [
-              "Desarrollo de plataforma de comercio electrónico completa para carnicería",
-              "Implementación de sistema de catálogo de productos por categorías",
-              "Integración de carrito de compras con cálculo de precios por kilo",
-              "Integración de pasarela de pagos Wompi para transacciones seguras",
-              "Sistema de autenticación por roles (admin, usuario, repartidor)",
-              "Desarrollo de panel administrativo para gestión de inventario",
-              "Despliegue y mantenimiento en plataformas Railway y Vercel",
+              "Apoyo en el desarrollo de blog corporativo con componentes reutilizables",
+              "Colaboración en traducción y localización de contenidos",
+              "Aplicación de buenas prácticas de desarrollo",
+              "Implementación de diseño responsive con enfoque mobile-first",
+              "Optimización de componentes para mejor rendimiento",
+            ],
+      technologies: ["React", "Tailwind CSS", "Git", "Vercel"],
+      icon: <Home className="h-5 w-5" />,
+      color: "bg-orange-500",
+    },
+    {
+      title: language === "en" ? "FullStack Development Support" : "Apoyo en Desarrollo FullStack",
+      company: "SoloCarnes",
+      period: language === "en" ? "January 2025 - May 2025" : "Enero 2025 - Mayo 2025",
+      location: language === "en" ? "Remote (Pasto, Colombia)" : "Remoto (Pasto, Colombia)",
+      description:
+        language === "en"
+          ? "Participated in the development of an online store for selling meat products. Supported the implementation of product catalog, shopping cart and payment gateway (Wompi). Collaborated in creating an administrative panel and user role management."
+          : "Participé en el desarrollo de una tienda online para venta de productos cárnicos. Apoyé la implementación del catálogo de productos, carrito de compras y pasarela de pagos (Wompi). Colaboré en la creación de un panel administrativo y en la gestión de roles de usuario.",
+      responsibilities:
+        language === "en"
+          ? [
+              "Participation in online store development for meat products",
+              "Support in implementing product catalog system",
+              "Collaboration in shopping cart and Wompi payment gateway integration",
+              "Support in creating administrative panel",
+              "Collaboration in user role management implementation",
+              "Support in deployment on Railway and Vercel platforms",
+            ]
+          : [
+              "Participación en desarrollo de tienda online para productos cárnicos",
+              "Apoyo en implementación de sistema de catálogo de productos",
+              "Colaboración en integración de carrito de compras y pasarela Wompi",
+              "Apoyo en creación de panel administrativo",
+              "Colaboración en implementación de gestión de roles de usuario",
+              "Apoyo en despliegue en plataformas Railway y Vercel",
             ],
       technologies: ["React", "Tailwind", "Django REST", "PostgreSQL", "Wompi", "Git", "Railway", "Vercel"],
       icon: <ShoppingCart className="h-5 w-5" />,
       color: "bg-blue-500",
     },
     {
-      title: language === "en" ? "Junior Software Engineer" : "Ingeniero de Software Junior",
+      title: language === "en" ? "FullStack Development Support" : "Apoyo en Desarrollo FullStack",
       company: "Luxury Now Cancún",
       period: language === "en" ? "May 2024 - January 2025" : "Mayo 2024 - Enero 2025",
-      location: language === "en" ? "Remote" : "Remoto",
+      location: language === "en" ? "Remote (Cancun, Mexico)" : "Remoto (Cancún, México)",
       description:
         language === "en"
-          ? "Participated in the development of a tourist booking platform in Cancun. Integrated Stripe as payment gateway, developed functions for service management and administrative panel."
-          : "Participé en el desarrollo de una plataforma de reservas turísticas en Cancún. Integré Stripe como pasarela de pagos, desarrollé funciones para gestión de servicios y panel administrativo.",
+          ? "Collaborated in the development of a tourist booking platform. Supported Stripe payment gateway integration. Participated in developing administrative functionalities for service management."
+          : "Colaboré en el desarrollo de una plataforma de reservas turísticas. Apoyé la integración de Stripe como pasarela de pagos. Participé en el desarrollo de funcionalidades administrativas para la gestión de servicios.",
       responsibilities:
         language === "en"
           ? [
-              "Development of tourist booking platform for Cancun services",
-              "Stripe payment gateway integration for secure transactions",
-              "Service management system development",
-              "Administrative panel creation for booking management",
-              "User interface optimization for better customer experience",
-              "Database design and implementation for booking system",
-              "API development for frontend-backend communication",
+              "Collaboration in tourist booking platform development",
+              "Support in Stripe payment gateway integration",
+              "Participation in developing administrative functionalities",
+              "Support in service management system implementation",
+              "Collaboration in user interface optimization",
+              "Support in deployment on Railway and Vercel",
             ]
           : [
-              "Desarrollo de plataforma de reservas turísticas para servicios en Cancún",
-              "Integración de pasarela de pagos Stripe para transacciones seguras",
-              "Desarrollo de sistema de gestión de servicios",
-              "Creación de panel administrativo para gestión de reservas",
-              "Optimización de interfaz de usuario para mejor experiencia del cliente",
-              "Diseño e implementación de base de datos para sistema de reservas",
-              "Desarrollo de APIs para comunicación frontend-backend",
+              "Colaboración en desarrollo de plataforma de reservas turísticas",
+              "Apoyo en integración de pasarela de pagos Stripe",
+              "Participación en desarrollo de funcionalidades administrativas",
+              "Apoyo en implementación de sistema de gestión de servicios",
+              "Colaboración en optimización de interfaz de usuario",
+              "Apoyo en despliegue en Railway y Vercel",
             ],
       technologies: ["React", "Tailwind", "Strapi", "Stripe", "Git", "Railway", "Vercel"],
       icon: <Plane className="h-5 w-5" />,
       color: "bg-purple-500",
     },
     {
-      title: language === "en" ? "Junior FullStack Developer" : "Desarrollador FullStack Junior",
+      title: language === "en" ? "Frontend Developer" : "Desarrollador Frontend",
       company: "Paycon",
       period: language === "en" ? "October 2023 - May 2024" : "Octubre 2023 - Mayo 2024",
-      location: language === "en" ? "Hybrid" : "Híbrido",
+      location: language === "en" ? "Hybrid (Pasto, Colombia)" : "Híbrido (Pasto, Colombia)",
       description:
         language === "en"
-          ? "Developed web solutions focused on local commerce and digital content. E-commerce: minimalist store for selling oyster mushrooms with WhatsApp orders without registration or payments. Technical blog: informative magazine-style platform about sustainability, technology and agricultural innovation."
-          : "Desarrollé soluciones web enfocadas en comercio local y contenido digital. Ecommerce: tienda minimalista para venta de setas orellanas con pedidos por WhatsApp sin registro ni pagos. Blog técnico: plataforma informativa estilo magazine sobre sostenibilidad, tecnología e innovación agrícola.",
+          ? "Developed web interfaces for local commerce and digital content. Built a simple online store for selling oyster mushrooms with automatic order generation via WhatsApp. Developed a blog with Next.js focused on technology and agricultural innovation."
+          : "Desarrollé interfaces web para comercio local y contenido digital. Construí una tienda online sencilla para la venta de setas orellanas con generación automática de pedidos vía WhatsApp. Desarrollé un blog con Next.js orientado a tecnología e innovación agrícola.",
       responsibilities:
         language === "en"
           ? [
-              "Development of minimalist e-commerce for mushroom sales",
-              "WhatsApp integration for order management without registration",
-              "Technical blog platform development with magazine-style design",
-              "Content management system for sustainability and technology articles",
+              "Development of web interfaces for local commerce",
+              "Creation of simple online store for oyster mushroom sales",
+              "Implementation of automatic WhatsApp order generation",
+              "Development of technology blog with Next.js",
+              "Focus on agricultural innovation content",
               "Responsive web design implementation",
-              "SEO optimization for better search engine visibility",
-              "Performance optimization for fast loading times",
             ]
           : [
-              "Desarrollo de e-commerce minimalista para venta de setas",
-              "Integración con WhatsApp para gestión de pedidos sin registro",
-              "Desarrollo de plataforma de blog técnico con diseño estilo magazine",
-              "Sistema de gestión de contenido para artículos de sostenibilidad y tecnología",
+              "Desarrollo de interfaces web para comercio local",
+              "Creación de tienda online sencilla para venta de setas orellanas",
+              "Implementación de generación automática de pedidos vía WhatsApp",
+              "Desarrollo de blog tecnológico con Next.js",
+              "Enfoque en contenido de innovación agrícola",
               "Implementación de diseño web responsivo",
-              "Optimización SEO para mejor visibilidad en motores de búsqueda",
-              "Optimización de rendimiento para tiempos de carga rápidos",
             ],
       technologies: ["React", "Tailwind CSS", "Next.js", "Git", "Vercel"],
       icon: <Store className="h-5 w-5" />,
@@ -190,27 +214,27 @@ export default function Experiencia() {
     {
       title: language === "en" ? "Software Engineering" : "Ingeniería de Software",
       institution: language === "en" ? "Universidad Cooperativa de Colombia" : "Universidad Cooperativa de Colombia",
-      period: language === "en" ? "2021 - Present" : "2021 - Presente",
+      period: language === "en" ? "August 2022 - Present" : "Agosto 2022 - En curso",
       location: language === "en" ? "Pasto, Colombia" : "Pasto, Colombia",
       description:
         language === "en"
-          ? "Currently in the sixth semester of Software Engineering. Study of the design, development, testing, and maintenance of computer applications and systems, applying engineering principles to ensure quality, efficiency, and sustainability in the software creation process."
-          : "Actualmente cursando el sexto semestre de Ingeniería de Software. Estudio del diseño, desarrollo, prueba y mantenimiento de aplicaciones y sistemas informáticos, aplicando principios de ingeniería para garantizar calidad, eficiencia y sostenibilidad en el proceso de creación de software.",
+          ? "Focus on web development, databases, programming logic, architecture and IoT projects. Study of the design, development, testing, and maintenance of computer applications and systems, applying engineering principles to ensure quality, efficiency, and sustainability in the software creation process."
+          : "Enfoque en desarrollo web, bases de datos, lógica de programación, arquitectura y proyectos con IoT. Estudio del diseño, desarrollo, prueba y mantenimiento de aplicaciones y sistemas informáticos, aplicando principios de ingeniería para garantizar calidad, eficiencia y sostenibilidad en el proceso de creación de software.",
       skills:
         language === "en"
           ? [
-              "Object-oriented programming",
-              "Software development",
+              "Web development",
               "Databases",
+              "Programming logic",
               "Software architecture",
-              "Agile methodologies",
+              "IoT projects",
             ]
           : [
-              "Programación orientada a objetos",
-              "Desarrollo de software",
+              "Desarrollo web",
               "Bases de datos",
+              "Lógica de programación",
               "Arquitectura de software",
-              "Metodologías ágiles",
+              "Proyectos con IoT",
             ],
       icon: <Code className="h-5 w-5" />,
       color: "bg-green-500",
